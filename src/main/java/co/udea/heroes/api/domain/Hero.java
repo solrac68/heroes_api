@@ -1,22 +1,41 @@
 package co.udea.heroes.api.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "heroes")
 public class Hero {
 	
-	private String nombre;
+	@Id
+	private int id;
+	private String name;
 	
-	public Hero(String nombre) {
+	public Hero() {
+		
+	}
+	
+	public Hero(int id, String name) {
 		super();
-		this.nombre = nombre;
+		this.id = id;
+		this.name = name;
 	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}	
 
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-	
-	
-	
 }

@@ -3,6 +3,7 @@ package co.udea.heroes.api.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +14,9 @@ import co.udea.heroes.api.service.HeroService;
 @RequestMapping("/tourofheroes")
 public class HeroController {
 	
+	
 	@Autowired
+	@Qualifier("HeroServiceImpl")
 	private HeroService heroService;
 
 	
@@ -22,9 +25,4 @@ public class HeroController {
 		return heroService.getHeroes();		
 	}
 	
-	@RequestMapping("saludar")
-	public String saludar(){
-		return "Hola clase";
-	}
-
 }

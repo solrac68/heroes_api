@@ -1,24 +1,30 @@
 package co.udea.heroes.api.service.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import co.udea.heroes.api.domain.Hero;
+import co.udea.heroes.api.repository.HeroRepository;
 import co.udea.heroes.api.service.HeroService;
 
 @Service
+@Qualifier("HeroServiceImpl")
 public class HeroServiceImpl implements HeroService {
 	
-
+	private HeroRepository heroRepository;
+	
+	public HeroServiceImpl(HeroRepository heroRepository){
+		this.heroRepository = heroRepository;
+	}
+	
 	@Override
 	public List<Hero> getHeroes() {
-		List<Hero> heroes = new ArrayList<Hero>();
-		heroes.add(new Hero("Spider-Man"));
-		heroes.add(new Hero("Hulk"));		
-		return heroes;
+		return heroRepository.findAll();
 	}
+	
+	
 
 }
 
