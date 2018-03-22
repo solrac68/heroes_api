@@ -10,6 +10,8 @@ public class Hero {
 	
 	@Id
 	private int id;
+	
+	
 	private String name;
 	
 	public Hero() {

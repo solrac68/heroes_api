@@ -5,6 +5,8 @@ spring:
     active: dev
   application:
     name: tourofheroes-api
+  messages:
+    basename: bundles/languageBundle
 
 logging:
   level.root: INFO
