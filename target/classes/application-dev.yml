@@ -1,5 +1,6 @@
 # Datasource configuration in dev environment
 server:
+  context-path: /heroapi
   port: 8080
   
 spring:

@@ -1,4 +1,8 @@
 # Datasource configuration in heroku environment
+server:
+  context-path: /heroapi
+  port: 8080
+  
 spring:
   jpa:
     show-sql: true
