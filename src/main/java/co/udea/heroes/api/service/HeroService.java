@@ -10,5 +10,12 @@ public interface HeroService {
 	public List<Hero> getHeroes();
 
 	public Optional<Hero> getHero(int id);
+	
+	public Hero saveHero(Hero heroe);
+	
+	public void deleteHero(Hero heroe);
+	
+	public List<Hero> getHeroes(String patron);
+	
 
 }

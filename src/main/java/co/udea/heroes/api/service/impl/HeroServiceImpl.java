@@ -30,6 +30,28 @@ public class HeroServiceImpl implements HeroService {
 		return heroRepository.findById(id);
 	}
 	
+	@Override
+	public Hero saveHero(Hero heroe) {
+		return heroRepository.save(heroe);
+	}
+	
+	@Override
+	public void deleteHero(Hero heroe) {
+		 heroRepository.delete(heroe);
+	}
+
+	@Override
+	public List<Hero> getHeroes(String patron) {
+		// TODO Auto-generated method stub
+		return heroRepository.findBynameLike(patron);
+	}
+
+//	@Override
+//	public List<Hero> getHeroes(String patron) {
+//		// TODO Auto-generated method stub
+//		heroRepository.findAll(example)
+//		return null;
+//	}
 	
 
 }
