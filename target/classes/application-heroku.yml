@@ -13,9 +13,9 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
       
   datasource:
-    url: jdbc:postgresql://ec2-107-20-173-71.compute-1.amazonaws.com:5432/d14avm9e5uct4f?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+    url: jdbc:postgresql://ec2-50-17-250-38.compute-1.amazonaws.com:5432/d8r39tj86772dv?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
     driver-class-name: org.postgresql.Driver
-    username: uvsgpvxmuoozbc
-    password: 46ba8079f7cfecc4ca802204eb460dba3199f6e8af4bf515eaa94f908a10e07f
+    username: kiyrbrxyhhqylp
+    password: cdd2b7ec4480f1df329187bbfeb3a2d550cbf3421670b2f9ca553c82a7ac5ffe
 
     
