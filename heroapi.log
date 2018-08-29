@@ -4175,3 +4175,65 @@ org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique co
 2018-08-04 22:26:38.420  INFO 9092 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
 2018-08-04 22:26:38.420  INFO 9092 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
 2018-08-04 22:26:38.420  INFO 9092 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-07 16:11:30.161  INFO 3748 --- [main] co.udea.heroes.api.HeroesApiApplication  : Starting HeroesApiApplication on Carlos-PC with PID 3748 (D:\ProyectosSTS\heroes_api\target\classes started by Carlos in D:\ProyectosSTS\heroes_api)
+2018-08-07 16:11:30.164  INFO 3748 --- [main] co.udea.heroes.api.HeroesApiApplication  : The following profiles are active: Heroku
+2018-08-07 16:11:30.288  INFO 3748 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44ebcd03: startup date [Tue Aug 07 16:11:30 COT 2018]; root of context hierarchy
+2018-08-07 16:11:31.944  INFO 3748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fb1382d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-07 16:11:32.640  INFO 3748 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-08-07 16:11:32.689  INFO 3748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-07 16:11:32.691  INFO 3748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-08-07 16:11:32.827  INFO 3748 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/heroapi]       : Initializing Spring embedded WebApplicationContext
+2018-08-07 16:11:32.827  INFO 3748 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2543 ms
+2018-08-07 16:11:32.977  INFO 3748 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-07 16:11:32.980  INFO 3748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-07 16:11:32.981  INFO 3748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-07 16:11:32.981  INFO 3748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-07 16:11:32.981  INFO 3748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-07 16:11:32.981  INFO 3748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'CORSFilter' to: [/*]
+2018-08-07 16:11:42.552  INFO 3748 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-07 16:11:42.587  INFO 3748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-07 16:11:42.744  INFO 3748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-08-07 16:11:42.745  INFO 3748 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-07 16:11:42.747  INFO 3748 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-08-07 16:11:42.842  INFO 3748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-07 16:11:42.979  INFO 3748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-08-07 16:12:23.302  INFO 3748 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-08-07 16:12:23.361  INFO 3748 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4346808
+2018-08-07 16:12:23.768  WARN 3748 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-08-07 16:12:24.041  INFO 3748 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-08-07 16:12:25.244  INFO 3748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-07 16:12:26.069  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tourofheroes/consultar]}" onto public co.udea.heroes.api.domain.Hero co.udea.heroes.api.controller.HeroController.getHero(int) throws co.udea.heroes.api.exception.DataNotFoundException
+2018-08-07 16:12:26.070  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tourofheroes/consultar404]}" onto public co.udea.heroes.api.domain.Hero co.udea.heroes.api.controller.HeroController.getHeroNo404(int)
+2018-08-07 16:12:26.070  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tourofheroes/listar]}" onto public java.util.List<co.udea.heroes.api.domain.Hero> co.udea.heroes.api.controller.HeroController.getHeroes()
+2018-08-07 16:12:26.070  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tourofheroes/crear],methods=[POST]}" onto public co.udea.heroes.api.domain.Hero co.udea.heroes.api.controller.HeroController.addHero(co.udea.heroes.api.domain.Hero)
+2018-08-07 16:12:26.070  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tourofheroes/actualizar],methods=[PUT]}" onto public co.udea.heroes.api.domain.Hero co.udea.heroes.api.controller.HeroController.updateHero(co.udea.heroes.api.domain.Hero)
+2018-08-07 16:12:26.071  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tourofheroes/borrar/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> co.udea.heroes.api.controller.HeroController.deleteHero(int)
+2018-08-07 16:12:26.071  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tourofheroes/buscar]}" onto public java.util.List<co.udea.heroes.api.domain.Hero> co.udea.heroes.api.controller.HeroController.searchHeroes(java.lang.String)
+2018-08-07 16:12:26.074  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-08-07 16:12:26.075  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-08-07 16:12:26.076  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-08-07 16:12:26.078  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-07 16:12:26.079  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-07 16:12:26.214  INFO 3748 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-08-07 16:12:26.466  INFO 3748 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44ebcd03: startup date [Tue Aug 07 16:11:30 COT 2018]; root of context hierarchy
+2018-08-07 16:12:26.528  INFO 3748 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-07 16:12:26.528  INFO 3748 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-07 16:12:26.563  INFO 3748 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-07 16:12:26.859  INFO 3748 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-07 16:12:26.879  INFO 3748 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-08-07 16:12:26.879  INFO 3748 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-08-07 16:12:26.894  INFO 3748 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-08-07 16:12:26.939  INFO 3748 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-08-07 16:12:27.409  INFO 3748 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-08-07 16:12:27.417  INFO 3748 --- [main] co.udea.heroes.api.HeroesApiApplication  : Started HeroesApiApplication in 57.925 seconds (JVM running for 59.182)
+2018-08-07 16:14:13.500  INFO 3748 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/heroapi]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-07 16:14:13.500  INFO 3748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-07 16:14:13.528  INFO 3748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-08-07 16:14:13.980  INFO 3748 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-08-07 18:48:28.537  INFO 3748 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-08-07 18:48:28.537  INFO 3748 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44ebcd03: startup date [Tue Aug 07 16:11:30 COT 2018]; root of context hierarchy
+2018-08-07 18:48:28.568  INFO 3748 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-08-07 18:48:28.568  INFO 3748 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-07 18:48:28.568  INFO 3748 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
